@@ -1,4 +1,4 @@
-# MySQL 8 Master-Master Replication:
+# MySQL v8 Master-Master Replication:
 
 MySQL 8 master-master replication involves configuring two MySQL servers to act as both master and slave to each other. This bidirectional replication allows changes made on either server to be replicated to the other. 
 
