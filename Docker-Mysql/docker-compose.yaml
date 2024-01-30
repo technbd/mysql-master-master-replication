@@ -1,0 +1,26 @@
+version: '3'
+services:
+    mysql_dev1:
+      image: mysql:8.0.34
+      container_name: mysql_master1
+      environment:
+        MYSQL_ROOT_PASSWORD: admin
+      ports:
+        - "3306:3306"
+      volumes:
+        - "./master1_conf_file:/etc/mysql/conf.d"
+        - "./master1_data:/var/lib/mysql:rw"
+    
+    mysql_dev2:
+      image: mysql:8.0.34
+      container_name: mysql_master2
+      environment:
+        MYSQL_ROOT_PASSWORD: admin
+      ports:
+        - "3307:3306"
+      volumes:
+        - "./master2_conf_file:/etc/mysql/conf.d"
+        - "./master2_data:/var/lib/mysql:rw"
+
+      
+
